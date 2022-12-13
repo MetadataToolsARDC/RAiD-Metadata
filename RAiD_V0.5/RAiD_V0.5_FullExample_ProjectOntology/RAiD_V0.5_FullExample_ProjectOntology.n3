@@ -1,0 +1,131 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <https://linked.data.gov.au/def/project#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<https://github.com/MetadataToolsARDC/projects/blob/main/RAiD/RAID_V0.5_FullExample_ProjectOntology/RAID_V0.5_FullExample_ProjectOntology.ttl>
+  a owl:Ontology ;
+  owl:imports <https://linked.data.gov.au/def/project> .
+
+<http://project/123xzy>
+  a <https://linked.data.gov.au/def/project#Project> ;
+  dc:identifier <http://RAiD.org/234234/oy54398ryf>, <https://cris.university.this/234876> ;
+  prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+  prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+  dc:title <http://title_set_range/7346> ;
+  dc:description <http://project_description/oy54398ryf> ;
+  prov:qualifiedAssociation [
+    a prov:Activity, prov:Association ;
+    prov:Person <http://orcid.org/0000-0002-7184-017X> ;
+    prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    prov:endedAtTime "2002-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+    prov:hadRole <http://vivoweb.org/ontology/core#LeaderRole>
+  ], [
+    a prov:Activity, prov:Association ;
+    prov:Person <http://orcid.org/0000-0002-7184-017X> ;
+    prov:hadRole <https://credit.niso.org/contributor-roles/investigation/>
+  ], [
+    a prov:Activity, prov:Association ;
+    prov:Agent <https://ror.org/03qn8fb07> ;
+    prov:hadRole <http://vivoweb.org/ontology/core#LeaderRole> ;
+    prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    prov:endedAtTime "2021-03-31T17:00:00.00Z"^^xsd:dateTime
+  ] ;
+  ns0:wasFundedThrough <https://doi.org/10.47486/Grant123> ;
+  prov:wasDerivedFrom <http://doi.org/to/input_dataset_456> ;
+  prov:qualifiedUsage [
+    a prov:Usage ;
+    rdfs:comment "optional time-limited usage if needed" ;
+    rdfs:label "Use of instrument 345" ;
+    prov:entity <http://pid/to/instrument345> ;
+    prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime
+  ] ;
+  prov:generated <http://pid/to/output_dataset987> ;
+  prov:wasInformedBy <http://raid.org/234234> ;
+  prov:qualifiedCommunication [
+    a prov:Communication ;
+    prov:activity <http://raid.org/234234> ;
+    rdfs:comment "SubProject that informed Parent Project" ;
+    prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime
+  ] ;
+  dc:subject <https://linked.data.gov.au/def/anzsrc-for/2020/41>, "flower", "fiore"@it, <https://localcontexts.org/blog/label/bc-outreach/> ;
+  dc:location <https://pid.ASGS/Australia>, "Italy", "Italia"@it ;
+  dc:box "name=Western Australia; northlimit=-13.5; southlimit=-35.5; westlimit=112.5; eastlimit=129" ;
+  dc:accessRights <http://purl.org/au-research/vocabulary/RIFCS/RIFCSAccessRightsType/open> ;
+  dc:available "2024" ;
+  dc:RightsStatement "Required if Access is specified as anything but 'open'.", "Obbligatorio se Access è specificato come qualcosa di diverso da 'open'."@it ;
+  dc:rightsHolder <https://ror.org/03qn8fb07> ;
+  dc:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:uri ;
+  dc:relation <https://raid.org/nn.nnnn/raid-example-full/subpart> .
+
+<http://RAiD.org/234234/oy54398ryf>
+  a prov:Entity ;
+  dc:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSIdentifierType/raid> ;
+  prov:qualifiedAttribution [
+    a prov:Attribution ;
+    prov:Organization <https://ror.org/038sjwq14> ;
+    prov:hadRole <http://ToDoRAiDVocabs.edu.au/RegistrationAgency>
+  ], [
+    a prov:Attribution ;
+    prov:SoftwareAgent <https://todo.pid.to.service.point.url> ;
+    prov:hadRole <http://ToDoRAiDVocabs.edu.au/ServiceEndpoint>
+  ] .
+
+<http://title_set_range/7346>
+  a dc:title ;
+  dc:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSNameType/primary> ;
+  rdf:value "RAID Project Title for 234234/oy54398ryf", "Titolo del progetto RAID per 234234/oy54398ryf"@it ;
+  dc:date "2012-03-01/2012-03-05"^^xsd:dateTime .
+
+<http://project_description/oy54398ryf>
+  a dc:description ;
+  dc:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSDescriptionType/full> ;
+  rdf:value "RAID Project Description for 234234/oy54398ryf - Much describing text in here...", "Descrizione del progetto RAID per 234234/oy54398ryf - Molto testo descrittivo qui..."@it .
+
+<http://orcid.org/0000-0002-7184-017X>
+  a prov:Person, foaf:Person ;
+  dc:identifier <http://orcid.org/0000-0002-7184-017X> ;
+  foaf:firstname "Green" ;
+  foaf:surname "Tree" .
+
+<https://ror.org/03qn8fb07>
+  a prov:Organization, foaf:Organization ;
+  dc:identifier "ISNI:0000000121732719", <https://crossref_funder_id/501100000943>, <https://grid/grid.1016.6>, <https://ror.org/03qn8fb07> ;
+  dc:title "Commonwealth Scientific and Industrial Research Organisation" ;
+  rdfs:comment "alternative places to store a name ... " ;
+  rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+  foaf:name "Commonwealth Scientific and Industrial Research Organisation" .
+
+<https://doi.org/10.47486/Grant123>
+  a ns0:FundingAssociation ;
+  ns0:grantNumber "ARDC_GRANT:Grant123" ;
+  prov:Agent <https://ror.org/038sjwq14> ;
+  prov:hadRole <https://linked.data.gov.au/def/project/Funder> ;
+  ns0:fundsProvided [
+    a ns0:SumOfMoney ;
+    ns0:moneyAmount 50000.0 ;
+    ns0:moneyCurrency <https://dbpedia.org/resource/Australian_dollar>
+  ] .
+
+<http://doi.org/to/input_dataset_456> a prov:Entity, dc:Dataset .
+<http://pid/to/instrument345>
+  a prov:Entity, dc:PhysicalObject ;
+  dc:identifier "SERIAL:ParticularInstrument345", <http://doi/to/instrument345>, <http://pid/to/instrument345> ;
+  dc:title "Particular Instrument" .
+
+<http://pid/to/output_dataset987>
+  a dcat:Dataset ;
+  dc:identifier "OTHER_ID:ParticularDataset987", <http://doi/to/dataset987>, <http://pid/to/dataset987> ;
+  dc:title "Particular Dataset" .
+
+<http://raid.org/234234>
+  a ns0:Project ;
+  dc:identifier "OTHER_ID:SubProject_234234" ;
+  dc:title "Sub Project A" .

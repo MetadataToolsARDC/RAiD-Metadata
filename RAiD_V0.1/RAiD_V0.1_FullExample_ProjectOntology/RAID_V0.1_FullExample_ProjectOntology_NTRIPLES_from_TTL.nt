@@ -1,0 +1,75 @@
+#  Generated at https://www.easyrdf.org/converter from  file:/Users/ada168/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl
+<file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl> <http://www.w3.org/2002/07/owl#imports> <https://linked.data.gov.au/def/project> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://linked.data.gov.au/def/project#Project> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/identifier> "http://RAiD.org/oy54398ryf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/identifier> "https://cris.university.this/234876"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/title> "http://title_set_range/7346"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#startedAtTime> "1980-10-13T09:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#endedAtTime> "1991-10-17T17:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/description> "RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.5.  All fields provided (at least in a comment if not accommodated by schema.org)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid1 .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid2 .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <https://linked.data.gov.au/def/project#wasFundedThrough> <https://www.moore.org/grants/list/GBMF3859.01> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#qualifiedUsage> _:genid3 .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://www.w3.org/ns/prov#generated> <http://pid/to/dataset987> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/subject> "https://linked.data.gov.au/def/anzsrc-for/2020/41"^^<http://www.w3.org/2001/XMLSchema#uri> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/rightsHolder> <https://ror.org/03qn8fb07> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/licence> "https://creativecommons.org/licenses/by/4.0/"^^<http://www.w3.org/2001/XMLSchema#uri> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/location> "Australia"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/accessRights> "Access Statement and embargo possibly too"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl> <http://purl.org/dc/terms/relation> "https://raid.org/nn.nnnn/raid-example-full/subpart"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid1 <http://www.w3.org/ns/prov#agent> <https://orcid.org/0000-0002-7184-017X> .
+_:genid1 <http://www.w3.org/ns/prov#endedAtTime> "2002-10-17T17:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid1 <http://www.w3.org/ns/prov#hadRole> <http://vivoweb.org/ontology/core#PrincipalInvestigatorRole> .
+_:genid1 <http://www.w3.org/ns/prov#startedAtTime> "2002-10-13T09:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid2 <http://www.w3.org/ns/prov#agent> <https://ror.org/03qn8fb07> .
+_:genid2 <http://www.w3.org/ns/prov#endedAtTime> "2021-03-31T17:00:00.00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid2 <http://www.w3.org/ns/prov#hadRole> <http://vivoweb.org/ontology/core#LeaderRole> .
+_:genid2 <http://www.w3.org/ns/prov#startedAtTime> "2002-10-13T09:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Usage> .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "optional time-limited usage if needed" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#label> "Use of machine 345" .
+_:genid3 <http://www.w3.org/ns/prov#endedAtTime> "1991-10-17T17:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid3 <http://www.w3.org/ns/prov#entity> <http://pid/to/instrument345> .
+_:genid3 <http://www.w3.org/ns/prov#startedAtTime> "1980-10-13T09:00:00.0+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://orcid.org/0000-0002-7184-017X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Person> .
+<http://orcid.org/0000-0002-7184-017X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://orcid.org/0000-0002-7184-017X> <http://purl.org/dc/terms/identifier> "http://orcid.org/0000-0002-7184-017X"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://orcid.org/0000-0002-7184-017X> <http://xmlns.com/foaf/0.1/firstname> "Green" .
+<http://orcid.org/0000-0002-7184-017X> <http://xmlns.com/foaf/0.1/surname> "Tree" .
+<https://ror.org/03qn8fb07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://ror.org/03qn8fb07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://ror.org/03qn8fb07> <http://purl.org/dc/terms/identifier> "ISNI:0000000121732719" .
+<https://ror.org/03qn8fb07> <http://purl.org/dc/terms/identifier> "https://crossref_funder_id/501100000943"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://ror.org/03qn8fb07> <http://purl.org/dc/terms/identifier> "https://grid/grid.1016.6"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://ror.org/03qn8fb07> <http://purl.org/dc/terms/identifier> "https://ror.org/03qn8fb07"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://ror.org/03qn8fb07> <http://purl.org/dc/terms/title> "Commonwealth Scientific and Industrial Research Organisation" .
+<https://ror.org/03qn8fb07> <http://www.w3.org/2000/01/rdf-schema#comment> "alternative places to store a name ... " .
+<https://ror.org/03qn8fb07> <http://www.w3.org/2000/01/rdf-schema#label> "Commonwealth Scientific and Industrial Research Organisation" .
+<https://ror.org/03qn8fb07> <http://xmlns.com/foaf/0.1/name> "Commonwealth Scientific and Industrial Research Organisation" .
+<http://pid/to/ARDCgrant123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://linked.data.gov.au/def/project#FundingAssociation> .
+<http://pid/to/ARDCgrant123> <http://purl.org/dc/terms/identifier> "ARC:BMF3859.01" .
+<http://pid/to/ARDCgrant123> <http://purl.org/dc/terms/identifier> "https://www.moore.org/grants/list/GBMF3859.01"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pid/to/ARDCgrant123> <http://purl.org/dc/terms/title> "ARC GBMF3859.01" .
+<http://pid/to/ARDCgrant123> <http://www.w3.org/ns/prov#agent> <https://arc.gov.au> .
+<http://pid/to/ARDCgrant123> <https://linked.data.gov.au/def/project#fundsProvided> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://linked.data.gov.au/def/project#SumOfMoney> .
+_:genid4 <https://linked.data.gov.au/def/project#moneyAmount> "50"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid4 <https://linked.data.gov.au/def/project#moneyCurrency> <https://dbpedia.org/resource/Australian_dollar> .
+<http://pid/to/instrument345> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://todo/Instrument> .
+<http://pid/to/instrument345> <http://purl.org/dc/terms/identifier> "SERIAL:ParticularInstrument345" .
+<http://pid/to/instrument345> <http://purl.org/dc/terms/identifier> "http://doi/to/instrument345"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pid/to/instrument345> <http://purl.org/dc/terms/identifier> "http://pid/to/instrument345"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pid/to/instrument345> <http://purl.org/dc/terms/title> "Particular Instrument" .
+<http://pid/to/dataset987> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://pid/to/dataset987> <http://purl.org/dc/terms/identifier> "OTHER_ID:ParticularDataset987" .
+<http://pid/to/dataset987> <http://purl.org/dc/terms/identifier> "http://doi/to/dataset987"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pid/to/dataset987> <http://purl.org/dc/terms/identifier> "http://pid/to/dataset987"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pid/to/dataset987> <http://purl.org/dc/terms/title> "Particular Dataset" .
+<http://title_set_range/7346> <http://purl.org/dc/terms/date> "2012-03-01/2012-03-05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

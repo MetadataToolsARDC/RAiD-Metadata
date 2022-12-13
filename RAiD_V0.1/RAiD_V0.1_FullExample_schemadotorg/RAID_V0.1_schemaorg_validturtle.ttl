@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl>
+a schema:ResearchProject ;
+
+# 1 Identifier; 1a identifierType; 1b identifierTypeURI
+schema:identifier "http://RAiD.org/oy54398ryf"^^xsd:anyURI ;
+
+# 2 Title; 2a titleType; 2b titleStartDate; 2c titleEndDate 
+# PART 1/2
+#schema:name "RAID V0.1 XML Full Example.  Conforms with schema.org"^^xsd:string ;
+schema:name "http://title_set_range/7346"^^xsd:anyURI ;
+
+# 3 StartDate; 4 EndDate 
+schema:startDate "2012-03-01"^^schema:Date ; 
+## Schema.org validation Warning: The property startDate is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+schema:endDate "2012-03-05"^^schema:Date ; 
+## Schema.org validation Warning: The property endDate is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+
+# 5 Description; 5a descriptionType
+schema:description "RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.5.  All fields provided (at least in a comment if not accommodated by schema.org)"^^xsd:string ;
+
+# 6 ContributorIdentifier; 6a contributorIdentifierScheme; 6b contributorIdentifierSchemeURI
+# 6.1 contributorRole
+# 6.2 contributorStartDate
+# 6.3 contributorEndDate 
+# 7 OrganisationIdentifier; 7a organisationIdentifierScheme; 7b organisationIdentifiertSchemeURI
+# 7.1 organisationRole 
+# 7.2 organisationStartDate 
+# 7.3 organisationEndDate 
+# PART 1/2
+
+schema:contactPoint <https://orcid.org/0000-0002-7184-017X>, <https://ror.org/03qn8fb07> ;
+## Schema.org validation Warning: The property contributor is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+
+# GrantIdentifier; 8a grantIdentifierScheme; 8b grantIdentifierSchemeURI
+# 8.1 grantStart 
+# 8.2 grantEnd 
+
+schema:funding [
+    a schema:MonetaryGrant ;
+    schema:identifier "https://www.moore.org/grants/list/GBMF3859.01"^^xsd:uri;
+    schema:startDate "2012-03-01"^^schema:Date ;  
+    ## Warning: The property startDate is not recognised by the schema (e.g. schema.org) for an object of type MonetaryGrant.
+    schema:endDate "2012-03-05"^^schema:Date ;  
+    ## Warning: The property endDate is not recognised by the schema (e.g. schema.org) for an object of type MonetaryGrant.
+  ] ;
+
+
+# 9 RelatedResource; 9a resourceIdentifierScheme; 9b resourceIdentifierSchemeURI
+# 9.1 relatedResourceType 
+schema:subjectOf [
+    a schema:Dataset ;
+    schema:identifier "https://doi.org/10.21384/ExampleDataset"^^xsd:uri;
+] ;
+
+# 10 Subject; 10a subjectScheme; 10b subjectSchemeURI; 10c subjectClassificationCode -->
+# 10.1 subjectKeyword -->
+
+schema:keywords "https://linked.data.gov.au/def/anzsrc-for/2020/41"^^xsd:uri ;
+
+# 11 RightsIdentifier; 11a rightsIdentiferScheme; 11b rightsSchemeURI; rightsIdentifierCode
+# 11.1 rightsManagementStatement 
+
+schema:copyrightHolder <https://ror.org/03qn8fb07> ;  
+## Schema.org validation Warning: The property copyrightHolder is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+
+schema:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:uri ; 
+## Schema.org validation Error: The property licence is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+
+# 12 GeoLocation; 12a geoLocationScheme; 12b geoLocationSchemeURI
+# 12.1 geoLocationPlace
+schema:location [  
+    a schema:Place ;
+    schema:Name "Australia"^^xsd:string ;
+];  ## Schema.org validation Warning: this is not considered valid in schema.org for an object of type "schema:Project"
+
+# 13 Access; 13a accessEmbargoExpiry -->
+# 13.1 accessStatement -->
+
+schema:conditionsOfAccess "Access Statement and embargo possibly too"^^xsd:string ; 
+## Schema.org validation Warning: The property conditionsOfAccess is not recognised by the schema (e.g. schema.org) for an object of type ResearchProject.
+
+#14 AlternateIdentifier; 14a alternateIdentifierType
+schema:identifier "https://cris.university.this/234876"^^xsd:anyURI ;
+
+# 15 RelatedRAiD; 15a relationType
+# Note that relation type is missing but perhaps this can be inferred by related object type
+
+schema:department "https://raid.org/nn.nnnn/raid-example-full/subpart"^^xsd:anyURI ; # Relating this child (of an Organization) with its subchild (which also inherits from Organization)
+.
+
+# 6 ContributorIdentifier; 6a contributorIdentifierScheme; 6b contributorIdentifierSchemeURI
+# 6.1 contributorRole
+# 6.2 contributorStartDate
+# 6.3 contributorEndDate 
+# 7 OrganisationIdentifier; 7a organisationIdentifierScheme; 7b organisationIdentifiertSchemeURI
+# 7.1 organisationRole 
+# 7.2 organisationStartDate 
+# 7.3 organisationEndDate 
+# PART 2/2
+
+  
+# 2 Title; 2a titleType; 2b titleStartDate; 2c titleEndDate 
+# PART 2/2 - Providing timerange for title - title requires IRI (does not have to resolve) for this
+<http://title_set_range/7346> schema:date "2012-03-01/2012-03-05"^^xsd:dateTime
+.

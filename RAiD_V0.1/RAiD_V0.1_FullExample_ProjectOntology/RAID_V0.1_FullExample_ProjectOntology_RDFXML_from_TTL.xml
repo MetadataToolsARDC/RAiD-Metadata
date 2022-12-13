@@ -1,0 +1,119 @@
+<!-- #  Generated at https://www.easyrdf.org/converter from  file:/Users/ada168/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl -->
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:ns0="https://linked.data.gov.au/def/project#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    
+    <owl:Ontology rdf:about="file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl">
+        <owl:imports rdf:resource="https://linked.data.gov.au/def/project"/>
+    </owl:Ontology>
+    
+    <rdf:Description rdf:about="https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl">
+        <rdf:type rdf:resource="https://linked.data.gov.au/def/project#Project"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://RAiD.org/oy54398ryf</dc:identifier>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cris.university.this/234876</dc:identifier>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://title_set_range/7346</dc:title>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-10-13T09:00:00.0+01:00</prov:startedAtTime>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1991-10-17T17:00:00.0+01:00</prov:endedAtTime>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.5.  All fields provided (at least in a comment if not accommodated by schema.org)</dc:description>
+        <prov:qualifiedAssociation>
+            <prov:Activity>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                <prov:agent rdf:resource="https://orcid.org/0000-0002-7184-017X"/>
+                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-10-17T17:00:00.0+01:00</prov:endedAtTime>
+                <prov:hadRole rdf:resource="http://vivoweb.org/ontology/core#PrincipalInvestigatorRole"/>
+                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-10-13T09:00:00.0+01:00</prov:startedAtTime>
+            </prov:Activity>
+        </prov:qualifiedAssociation>
+        
+        <prov:qualifiedAssociation>
+            <prov:Activity>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                <prov:agent rdf:resource="https://ror.org/03qn8fb07"/>
+                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T17:00:00.00Z</prov:endedAtTime>
+                <prov:hadRole rdf:resource="http://vivoweb.org/ontology/core#LeaderRole"/>
+                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-10-13T09:00:00.0+01:00</prov:startedAtTime>
+            </prov:Activity>
+        </prov:qualifiedAssociation>
+        
+        <ns0:wasFundedThrough rdf:resource="https://www.moore.org/grants/list/GBMF3859.01"/>
+        <prov:qualifiedUsage>
+            <prov:Activity>
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+                <rdfs:comment>optional time-limited usage if needed</rdfs:comment>
+                <rdfs:label>Use of machine 345</rdfs:label>
+                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1991-10-17T17:00:00.0+01:00</prov:endedAtTime>
+                <prov:entity>
+                    <rdf:Description rdf:about="http://pid/to/instrument345">
+                        <rdf:type rdf:resource="http://todo/Instrument"/>
+                        <dc:identifier>SERIAL:ParticularInstrument345</dc:identifier>
+                        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://doi/to/instrument345</dc:identifier>
+                        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://pid/to/instrument345</dc:identifier>
+                        <dc:title>Particular Instrument</dc:title>
+                    </rdf:Description>
+                </prov:entity>
+                
+                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-10-13T09:00:00.0+01:00</prov:startedAtTime>
+            </prov:Activity>
+        </prov:qualifiedUsage>
+        
+        <prov:generated>
+            <dcat:Dataset rdf:about="http://pid/to/dataset987">
+                <dc:identifier>OTHER_ID:ParticularDataset987</dc:identifier>
+                <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://doi/to/dataset987</dc:identifier>
+                <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://pid/to/dataset987</dc:identifier>
+                <dc:title>Particular Dataset</dc:title>
+            </dcat:Dataset>
+        </prov:generated>
+        
+        <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#uri">https://linked.data.gov.au/def/anzsrc-for/2020/41</dc:subject>
+        <dc:rightsHolder rdf:resource="https://ror.org/03qn8fb07"/>
+        <dc:licence rdf:datatype="http://www.w3.org/2001/XMLSchema#uri">https://creativecommons.org/licenses/by/4.0/</dc:licence>
+        <dc:location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australia</dc:location>
+        <dc:accessRights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access Statement and embargo possibly too</dc:accessRights>
+        <dc:relation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raid.org/nn.nnnn/raid-example-full/subpart</dc:relation>
+    </rdf:Description>
+    
+    <prov:Person rdf:about="http://orcid.org/0000-0002-7184-017X">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://orcid.org/0000-0002-7184-017X</dc:identifier>
+        <foaf:firstname>Green</foaf:firstname>
+        <foaf:surname>Tree</foaf:surname>
+    </prov:Person>
+    
+    <prov:Organization rdf:about="https://ror.org/03qn8fb07">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <dc:identifier>ISNI:0000000121732719</dc:identifier>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://crossref_funder_id/501100000943</dc:identifier>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://grid/grid.1016.6</dc:identifier>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/03qn8fb07</dc:identifier>
+        <dc:title>Commonwealth Scientific and Industrial Research Organisation</dc:title>
+        <rdfs:comment>alternative places to store a name ... </rdfs:comment>
+        <rdfs:label>Commonwealth Scientific and Industrial Research Organisation</rdfs:label>
+        <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
+    </prov:Organization>
+    
+    <ns0:FundingAssociation rdf:about="http://pid/to/ARDCgrant123">
+        <dc:identifier>ARC:BMF3859.01</dc:identifier>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.moore.org/grants/list/GBMF3859.01</dc:identifier>
+        <dc:title>ARC GBMF3859.01</dc:title>
+        <prov:agent rdf:resource="https://arc.gov.au"/>
+        <ns0:fundsProvided>
+            <ns0:SumOfMoney>
+                <ns0:moneyAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</ns0:moneyAmount>
+                <ns0:moneyCurrency rdf:resource="https://dbpedia.org/resource/Australian_dollar"/>
+            </ns0:SumOfMoney>
+        </ns0:fundsProvided>
+        
+    </ns0:FundingAssociation>
+    
+    <rdf:Description rdf:about="http://title_set_range/7346">
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-01/2012-03-05</dc:date>
+    </rdf:Description>
+    
+</rdf:RDF>

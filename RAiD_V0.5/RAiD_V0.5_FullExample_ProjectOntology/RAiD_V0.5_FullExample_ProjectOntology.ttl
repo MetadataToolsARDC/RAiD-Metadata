@@ -1,0 +1,307 @@
+# Based on https://github.com/dr-shorthair/project-ont/blob/gh-pages/rdf/RAID-example.ttl
+# baseURI: https://github.com/MetadataToolsARDC/projects/blob/main/RAiD/RAID_V0.5_FullExample_ProjectOntology/RAID_V0.5_FullExample_ProjectOntology.ttl
+# imports: https://linked.data.gov.au/def/project
+# HumanReadable Schema is at https://confluence.ardc.edu.au/display/raid/RAiD+Metadata+Schema+v0.5
+# Location https://github.com/MetadataToolsARDC/projects/blob/main/RAiD/RAID_V0.5_FullExample_ProjectOntology/RAID_V0.5_FullExample_ProjectOntology.ttl
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dc: <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix proj: <https://linked.data.gov.au/def/project#> .
+@prefix proji: <https://linked.data.gov.au/def/project/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rifcs: <http://purl.org/au-research/vocabulary/RIFCS> .
+@prefix ToDo:  <http://ToDoRAiDVocabs.edu.au/> .
+ 
+<https://github.com/MetadataToolsARDC/projects/blob/main/RAiD/RAID_V0.5_FullExample_ProjectOntology/RAID_V0.5_FullExample_ProjectOntology.ttl>
+  a owl:Ontology ;
+  owl:imports <https://linked.data.gov.au/def/project> ;
+.
+
+<http://project/123xzy>
+a proj:Project ;
+
+# 1 Identifier
+dcterms:identifier <http://RAiD.org/234234/oy54398ryf> ; 
+
+# 2 StartDate
+prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+
+# 3 EndDate 
+prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+
+# 4 Title
+dcterms:title <http://title_set_range/7346> ;
+
+# 5 Description
+dcterms:description <http://project_description/oy54398ryf> ;
+
+# 6 Contributor - Position: LeaderRole
+prov:qualifiedAssociation [
+      a prov:Activity ;
+      a prov:Association ;
+      # 6a contributorIdentifierSchemeURI
+      prov:Person <http://orcid.org/0000-0002-7184-017X> ;
+      # 6.1 contributorPosition
+      # 6.1.1 contributorPositionStartDate
+      prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+      # 6.1.2 contributorPositionEndDate 
+      prov:endedAtTime "2002-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+      prov:hadRole <http://vivoweb.org/ontology/core#LeaderRole> ; 
+    ] ;
+
+
+# 6 Contributor - Role: investigation
+prov:qualifiedAssociation [
+      a prov:Activity ;
+      a prov:Association ;
+      # 6a contributorIdentifierSchemeURI
+      prov:Person <http://orcid.org/0000-0002-7184-017X> ;
+      # 6.2 contributorRole
+      # 6.2a contributorRoleSchemeURI
+      prov:hadRole <https://credit.niso.org/contributor-roles/investigation/> ;    
+    ] ;
+
+# 7 Organisation - Position: LeaderRole
+prov:qualifiedAssociation [
+      a prov:Activity ;
+      a prov:Association ;
+      # 7a organisationIdentifierSchemeURI
+      prov:Agent <https://ror.org/03qn8fb07> ;
+      # 7.1 organisationRole 
+      prov:hadRole <http://vivoweb.org/ontology/core#LeaderRole> ;
+      # 7.1.1 organisationRoleStartDate 
+      prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+      # 7.1.2 organisationRoleEndDate 
+      prov:endedAtTime "2021-03-31T17:00:00.00Z"^^xsd:dateTime ;
+    ] ;
+
+# 8 Input - GRANT
+proj:wasFundedThrough <https://doi.org/10.47486/Grant123> ;
+
+# 8 Input - DATASET 
+prov:wasDerivedFrom <http://doi.org/to/input_dataset_456> ;
+
+# 8 Input - INSTRUMENT
+prov:qualifiedUsage [
+      a prov:Usage ;
+      rdfs:comment "optional time-limited usage if needed" ;
+      rdfs:label "Use of instrument 345" ;
+      prov:entity <http://pid/to/instrument345> ;
+      prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+      prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+    ] ;
+
+# 9 Output - DATASET 
+prov:generated <http://pid/to/output_dataset987> ;
+
+# 10 AlternateIdentifier
+# 10a alternateIdentifierType
+# 11 AlternateURL
+dcterms:identifier <https://cris.university.this/234876> ;
+
+
+# 12 RelatedRAiD
+prov:wasInformedBy  <http://raid.org/234234> ;
+prov:qualifiedCommunication [
+     a prov:Communication;
+     prov:activity <http://raid.org/234234>;
+     rdfs:comment "SubProject that informed Parent Project";
+     prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+     prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+ ];
+
+
+# 13 Subject
+# 13a subjectSchemeURI
+# 13b subjectClassificationCode
+# 13.1 subjectKeyword 
+# 13.1a subjectKeywordLanguage 
+# 13.1b subjectLanguageSchemeURI
+dcterms:subject <https://linked.data.gov.au/def/anzsrc-for/2020/41> ;
+
+dcterms:subject "flower" ;
+dcterms:subject "fiore"@it ;
+
+# 14 TraditionalKnowledgeLabelScheme
+dcterms:subject <https://localcontexts.org/blog/label/bc-outreach/> ;
+
+# 12 SpatialCoverage
+# 15a spatialCoverageSchemeURI
+# 15.1 spatialCoveragePlace
+# 15.1a spatialCoverageLanguage
+# 15.1b spatialCoverageLanguageSchemeURI
+dcterms:location <https://pid.ASGS/Australia> ;
+dcterms:location "Italy" ;
+dcterms:location "Italia"@it ;
+dcterms:box "name=Western Australia; northlimit=-13.5; southlimit=-35.5; westlimit=112.5; eastlimit=129" ;
+
+
+# 16 Access
+dcterms:accessRights <http://purl.org/au-research/vocabulary/RIFCS/RIFCSAccessRightsType/open> ;
+
+# 16a accessEmbargoExpiry - if there is embargo, give date available at future date when embargo has expired
+dcterms:available "2024" ;
+
+# 16.1 accessStatement
+# 16.1b accessStatementLanguageSchemeURI
+dcterms:RightsStatement "Required if Access is specified as anything but 'open'." ;
+dcterms:RightsStatement "Obbligatorio se Access è specificato come qualcosa di diverso da 'open'."@it ;
+
+
+# 11 RightsIdentifier; 11a rightsIdentiferScheme; 11b rightsSchemeURI; rightsIdentifierCode
+# 11.1 rightsManagementStatement 
+
+dcterms:rightsHolder <https://ror.org/03qn8fb07> ;
+dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:uri ;
+
+# 15 RelatedRAiD; 15a relationType
+# Note that relation type is missing
+
+dcterms:relation <https://raid.org/nn.nnnn/raid-example-full/subpart> .
+
+##################################################################
+## RelatedObjects (linked by their identifiers, above)
+# 1a identifierTypeURI
+<http://RAiD.org/234234/oy54398ryf>
+ a prov:Entity;
+ dcterms:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSIdentifierType/raid> ;
+ 
+# 1.1 identifierRegistrationAgency
+# Using prov:qualifiedAttribution to associate RAiD (prov:Entity) with 
+# ARDC Registration Agency (prov:Agent->prov:Organization) avoids
+# having to define the activity of RAiD registration (prov:Activity) that sits between this relationship,
+# (but we could if we wanted to)
+ prov:qualifiedAttribution [
+       a prov:Attribution;
+       prov:Organization <https://ror.org/038sjwq14> ;
+       prov:hadRole ToDo:RegistrationAgency ;
+     ] ;
+	 
+# 1.2 identifierServicePoint
+# Using prov:qualifiedAttribution to associate RAiD (prov:Entity) with 
+# ServiceEndpoint (prov:Agent->prov:SoftwareAgent) avoids
+# having to define the activity of RAiD retrieval (prov:Activity) that sits between this relationship,
+# (but we could if we wanted to)
+
+  prov:qualifiedAttribution [
+        a prov:Attribution;
+        prov:SoftwareAgent <https://todo.pid.to.service.point.url> ;
+        prov:hadRole ToDo:ServiceEndpoint ;
+      ] ;
+.
+
+# 4 Title
+<http://title_set_range/7346> 
+ a dcterms:title ;
+ # 4.1 titleType
+ # 4.1a titleTypeSchemeURI
+ dcterms:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSNameType/primary> ;
+ # 4.2 titleLanguage
+ # 4.2a titleLanguageSchemeURI
+ rdf:value "RAID Project Title for 234234/oy54398ryf" ;
+ rdf:value "Titolo del progetto RAID per 234234/oy54398ryf"@it ;
+ # 4.3 titleStartDate 
+ # 4.4. titleEndDate
+ dcterms:date "2012-03-01/2012-03-05"^^xsd:dateTime 
+.
+
+# 5 Description
+<http://project_description/oy54398ryf>
+ a dcterms:description ;
+ # 5.1 descriptionType
+ # 5.1a descriptionTypeSchemeURI
+ dcterms:type <http://purl.org/au-research/vocabulary/RIFCS/RIFCSDescriptionType/full> ;
+ # 5.2 descriptionLanguage
+ # 5.2a descriptionLanguageSchemeURI
+ rdf:value "RAID Project Description for 234234/oy54398ryf - Much describing text in here..." ;
+ rdf:value "Descrizione del progetto RAID per 234234/oy54398ryf - Molto testo descrittivo qui..."@it
+.
+
+# 6 Contributor - PERSON
+<http://orcid.org/0000-0002-7184-017X>
+  a prov:Person ;
+  a foaf:Person ;
+  dcterms:identifier <http://orcid.org/0000-0002-7184-017X> ;
+  foaf:firstname "Green" ;
+  foaf:surname "Tree" 
+.
+
+
+# 7 Organization
+<https://ror.org/03qn8fb07>
+  a prov:Organization ;
+  a foaf:Organization ;
+  dcterms:identifier "ISNI:0000000121732719" ;
+  dcterms:identifier <https://crossref_funder_id/501100000943> ;
+  dcterms:identifier <https://grid/grid.1016.6> ;
+  dcterms:identifier <https://ror.org/03qn8fb07> ;
+  dcterms:title "Commonwealth Scientific and Industrial Research Organisation" ;
+  rdfs:comment "alternative places to store a name ... " ;
+  rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+  foaf:name "Commonwealth Scientific and Industrial Research Organisation" 
+.
+
+# 8 Input - GRANT
+# 8a inputIdentifierSchemeURI
+<https://doi.org/10.47486/Grant123>
+  a proj:FundingAssociation ;
+  # 8.1 inputType = "Grant" where we have a proj:FundingAssociation like this
+  # 8.1a inputTypeSchemeURI 
+  proj:grantNumber "ARDC_GRANT:Grant123" ;
+  prov:Agent <https://ror.org/038sjwq14> ;
+  prov:hadRole proji:Funder ;
+  proj:fundsProvided [
+      a proj:SumOfMoney ;
+      proj:moneyAmount "50000"^^xsd:decimal ;
+      proj:moneyCurrency <https://dbpedia.org/resource/Australian_dollar> ;
+    ] 
+.
+
+# 8 Input - DATASET
+# 8a inputIdentifierSchemeURI
+<http://doi.org/to/input_dataset_456>
+  # 8.1 inputType
+  # 8.1a inputTypeSchemeURI 
+  a prov:Entity, dcterms:Dataset 
+.
+  
+
+# 8 Input - INSTRUMENT
+# 8a inputIdentifierSchemeURI
+<http://pid/to/instrument345>
+  # 8.1 inputType 
+  # 8.1a inputTypeSchemeURI 
+  a prov:Entity, dcterms:PhysicalObject ;
+  dcterms:identifier "SERIAL:ParticularInstrument345" ;
+  dcterms:identifier <http://doi/to/instrument345> ;
+  dcterms:identifier <http://pid/to/instrument345> ;
+  dcterms:title "Particular Instrument" 
+.
+
+# 9 Output - DATASET
+# 9a outputIdentifierSchemeURI
+<http://pid/to/output_dataset987>
+  # 9.1 outputType
+  # 9.1a outputTypeSchemeURI
+  a dcat:Dataset ;
+  dcterms:identifier "OTHER_ID:ParticularDataset987" ;
+  dcterms:identifier <http://doi/to/dataset987> ;
+  dcterms:identifier <http://pid/to/dataset987> ;
+  dcterms:title "Particular Dataset" 
+.
+
+# RELATED RAiD
+# 12 RelatedRAiD
+<http://raid.org/234234>
+  a proj:Project ;
+  dcterms:identifier "OTHER_ID:SubProject_234234" ;
+  dcterms:title "Sub Project A" 
+.

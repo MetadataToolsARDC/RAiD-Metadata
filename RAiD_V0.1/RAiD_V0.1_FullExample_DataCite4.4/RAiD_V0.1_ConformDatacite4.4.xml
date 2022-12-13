@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Provided in order from https://confluence.ardc.edu.au/pages/viewpage.action?spaceKey=raid&title=RAiD+Metadata+Schema+v0.1 -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
+
+    <!-- 1 Identifier; 1a identifierType; 1b identifierTypeURI-->
+    <identifier identifierType="RAID">https://raid.org/nn.nnnn/raid-example-full-conform-datacite4.4-3452634</identifier>
+    
+    <!-- 2 Title; 2a titleType; 2b titleStartDate; 2c titleEndDate -->
+    <titles>
+        <title xml:lang="en-US">RAID V0.1 XML Example</title>
+        <title xml:lang="en-US" titleType="Subtitle">Conforms with DataCite Metadata 4.4</title>
+        <!--date dateType="active">2012-03-01/2012-03-05</date> StartDate Mandatory and EndDate Recommended - for RAiD but not included in DataCite -->
+    </titles>
+
+    <!-- 3 StartDate; 4 EndDate -->
+    <!--date dateType="active">2012-03-01/2012-03-05</date> StartDate Mandatory and EndDate Recommended - for RAiD but not included in DataCite -->
+
+    <!-- 5 Description; 5a descriptionType -->
+    <descriptions>
+        <description xml:lang="en-US" descriptionType="Abstract">RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.4.  All fields provided (at least in a comment if not accommodated by current schema)</description>
+    </descriptions>
+
+    <!-- (Creator required for DataCite, but not for RAiD) -->
+    <creators>
+        <creator>
+            <creatorName>Project, Creator</creatorName> <!-- Required for DataCite, but not for RAiD -->
+        </creator>
+    </creators>
+
+
+    <!-- 6 ContributorIdentifier; 6a contributorIdentifierScheme; 6b contributorIdentifierSchemeURI -->
+    <!-- 6.1 contributorRole -->
+    <!-- 6.2 contributorStartDate -->
+    <!-- 6.3 contributorEndDate -->
+    <contributors>
+        <contributor contributorType="ContactPerson">
+            <contributorName>Tree, Green</contributorName> <!-- Required for datacite, but not for RAiD -->
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-7184-017X</nameIdentifier>
+            <!--date dateType="active">2012-03-01/2012-03-05</date> StartDate Mandatory and EndDate Recommended - for RAiD but not included in DataCite -->
+        </contributor>
+
+    <!-- 7 OrganisationIdentifier; 7a organisationIdentifierScheme; 7b organisationIdentifiertSchemeURI -->
+    <!-- 7.1 organisationRole -->
+    <!-- 7.2 organisationStartDate -->
+    <!-- 7.3 organisationEndDate -->
+        <contributor contributorType="ProjectManager">
+            <contributorName>CSIRO</contributorName> <!-- Required for datacite, but not for RAiD -->
+            <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/03qn8fb07</nameIdentifier>
+            <!--date dateType="active">2012-03-01/2012-03-05</date> StartDate Mandatory and EndDate Recommended - for RAiD but not included in DataCite -->
+        </contributor>
+    </contributors>
+    
+    <!-- 8 GrantIdentifier; 8a grantIdentifierScheme; 8b grantIdentifierSchemeURI-->
+    <!-- 8.1 grantStart -->
+    <!-- 8.2 grantEnd -->
+    <fundingReferences>
+        <fundingReference>
+            <funderName>Australian Research Council</funderName> <!-- Required for DataCite, but not for RAiD -->
+            <awardNumber awardURI="https://www.moore.org/grants/list/GBMF3859.01">GBMF3859.01</awardNumber>
+            <!--date dateType="active">2012-03-01/2012-03-05</date> StartDate Recommended and EndDate Recommended - for RAiD but not included in DataCite -->
+        </fundingReference>
+    </fundingReferences>
+    
+    <!-- 9 RelatedResource; 9a resourceIdentifierScheme; 9b resourceIdentifierSchemeURI -->
+    <!-- 9.1 relatedResourceType -->
+    <relatedItems>
+        <relatedItem relationType="IsCitedBy" relatedItemType="Dataset"> <!-- Note that this relationType "IsCitedBy" is not suitable for this relationship -->
+            <relatedItemIdentifier relatedItemIdentifierType="DOI">10.21384/ExampleDataset</relatedItemIdentifier>
+        </relatedItem>
+    </relatedItems>
+    
+    <!-- (Publisher required for DataCite but not for RAiD) -->
+    <publisher xml:lang="en">RAiD</publisher> <!-- Required for DataCite, but not for RAiD -->
+    
+    <!-- 10 Subject; 10a subjectScheme; 10b subjectSchemeURI; 10c subjectClassificationCode -->
+    <!-- 10.1 subjectKeyword -->
+    <subjects>
+        <subject xml:lang="en-US" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020/41" subjectScheme="ANZSRC-FOR" classificationCode="41">ENVIRONMENTAL SCIENCES</subject>
+    </subjects>
+    
+    <!-- 11 RightsIdentifier; 11a rightsIdentiferScheme; 11b rightsSchemeURI; rightsIdentifierCode -->
+    <!-- 11.1 rightsManagementStatement -->
+    <rightsList>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+        <rights>Big long rights statement</rights>
+        <rights>Access Statement and embargo possibly too</rights> <!-- To encode -->
+    </rightsList>
+    
+    <!-- 12 GeoLocation; 12a geoLocationScheme; 12b geoLocationSchemeURI -->
+    <!-- 12.1 geoLocationPlace -->
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Southern Ocean</geoLocationPlace>
+        </geoLocation>
+    </geoLocations>
+    
+    <!-- 13 Access; 13a accessEmbargoExpiry -->
+    <!-- 13.1 accessStatement -->
+    <!-- Access statement provided in rights element, previous in file -->
+    
+    <!-- 14 AlternateIdentifier; 14a alternateIdentifierType -->
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="URL">https://cris.university.this/234876</alternateIdentifier>
+    </alternateIdentifiers>
+
+    
+    <language>en-US</language>
+    <resourceType resourceTypeGeneral="Event">Project</resourceType>
+    
+    <!-- 15 RelatedRAiD; 15a relationType -->
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart" relatedMetadataScheme="raid+json" schemeURI="https://raid.org/0/schema-xml">https://raid.org/nn.nnnn/raid-example-full/subpart</relatedIdentifier>
+    </relatedIdentifiers>
+    <publicationYear>2022</publicationYear> <!-- Required for DataCite, but not for RAiD -->
+</resource>

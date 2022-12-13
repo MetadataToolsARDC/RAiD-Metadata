@@ -1,0 +1,199 @@
+# Based on https://github.com/dr-shorthair/project-ont/blob/gh-pages/rdf/RAID-example.ttl
+# baseURI: file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl
+# imports: https://linked.data.gov.au/def/project
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix proj: <https://linked.data.gov.au/def/project#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ 
+<file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl>
+  a owl:Ontology ;
+  owl:imports <https://linked.data.gov.au/def/project> ;
+.
+
+<https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl>
+a proj:Project ;
+
+# 1 Identifier; 1a identifierType; 1b identifierTypeURI
+dcterms:identifier "http://RAiD.org/oy54398ryf"^^xsd:anyURI ;
+
+# 2 Title; 2a titleType; 2b titleStartDate; 2c titleEndDate 
+# PART 1/2
+dcterms:title <http://title_set_range/7346> ;
+
+# 3 StartDate; 4 EndDate 
+prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+
+# 5 Description; 5a descriptionType
+dcterms:description "RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.5.  All fields provided (at least in a comment if not accommodated by schema.org)"^^xsd:string ;
+
+# 6 ContributorIdentifier; 6a contributorIdentifierScheme; 6b contributorIdentifierSchemeURI
+# 6.1 contributorRole
+# 6.2 contributorStartDate
+# 6.3 contributorEndDate 
+# PART 1/2
+
+#PRINCIPAL_INVESTIGATOR - PERSON
+prov:qualifiedAssociation [
+      a prov:Activity ;
+      a prov:Association ;
+      prov:agent <http://orcid.org/0000-0002-7184-017X> ;
+      prov:endedAtTime "2002-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+      prov:hadRole <http://vivoweb.org/ontology/core#PrincipalInvestigatorRole> ;
+      prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    ] ;
+
+# 7 OrganisationIdentifier; 7a organisationIdentifierScheme; 7b organisationIdentifiertSchemeURI
+# 7.1 organisationRole 
+# 7.2 organisationStartDate 
+# 7.3 organisationEndDate 
+# PART 1/2
+
+#LEADER - ORGANISATION
+prov:qualifiedAssociation [
+      a prov:Activity ;
+      a prov:Association ;
+      prov:agent <https://ror.org/03qn8fb07> ;
+      prov:endedAtTime "2021-03-31T17:00:00.00Z"^^xsd:dateTime ;
+      prov:hadRole <http://vivoweb.org/ontology/core#LeaderRole> ;
+      prov:startedAtTime "2002-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    ] ;
+
+# GrantIdentifier; 8a grantIdentifierScheme; 8b grantIdentifierSchemeURI
+# 8.1 grantStart 
+# 8.2 grantEnd 
+# PART 1/2
+
+proj:wasFundedThrough <https://www.moore.org/grants/list/GBMF3859.01> ;
+
+# 9 RelatedResource; 9a resourceIdentifierScheme; 9b resourceIdentifierSchemeURI
+# 9.1 relatedResourceType 
+# PART 1/1
+# RELATED INSTRUMENT
+prov:qualifiedUsage [
+      a prov:Activity ;
+      a prov:Usage ;
+      rdfs:comment "optional time-limited usage if needed" ;
+      rdfs:label "Use of machine 345" ;
+      prov:endedAtTime "1991-10-17T17:00:00.0+01:00"^^xsd:dateTime ;
+      prov:entity <http://pid/to/instrument345> ;
+      prov:startedAtTime "1980-10-13T09:00:00.0+01:00"^^xsd:dateTime ;
+    ] ;
+# RELATED DATASET
+prov:generated <http://pid/to/dataset987> ;
+
+# 10 Subject; 10a subjectScheme; 10b subjectSchemeURI; 10c subjectClassificationCode -->
+# 10.1 subjectKeyword -->
+
+dcterms:subject "https://linked.data.gov.au/def/anzsrc-for/2020/41"^^xsd:uri ;
+
+# 11 RightsIdentifier; 11a rightsIdentiferScheme; 11b rightsSchemeURI; rightsIdentifierCode
+# 11.1 rightsManagementStatement 
+
+dcterms:rightsHolder <https://ror.org/03qn8fb07> ;
+dcterms:licence "https://creativecommons.org/licenses/by/4.0/"^^xsd:uri ;
+
+# 12 GeoLocation; 12a geoLocationScheme; 12b geoLocationSchemeURI
+# 12.1 geoLocationPlace
+dcterms:location "Australia"^^xsd:string ;
+
+# 13 Access; 13a accessEmbargoExpiry -->
+# 13.1 accessStatement -->
+
+dcterms:accessRights "Access Statement and embargo possibly too"^^xsd:string ;
+
+#14 AlternateIdentifier; 14a alternateIdentifierType
+dcterms:identifier "https://cris.university.this/234876"^^xsd:anyURI ;
+
+# 15 RelatedRAiD; 15a relationType
+# Note that relation type is missing
+
+dcterms:relation "https://raid.org/nn.nnnn/raid-example-full/subpart"^^xsd:anyURI .
+
+##################################################################
+## RelatedObjects (linked by their identifiers, above)
+# 6 ContributorIdentifier; 6a contributorIdentifierScheme; 6b contributorIdentifierSchemeURI
+# 6.1 contributorRole
+# 6.2 contributorStartDate
+# 6.3 contributorEndDate 
+# PART 2/2
+<http://orcid.org/0000-0002-7184-017X>
+  a prov:Person ;
+  a foaf:Person ;
+  dcterms:identifier "http://orcid.org/0000-0002-7184-017X"^^xsd:anyURI ;
+  foaf:firstname "Green" ;
+  foaf:surname "Tree" 
+.
+
+
+# 7 OrganisationIdentifier; 7a organisationIdentifierScheme; 7b organisationIdentifiertSchemeURI
+# 7.1 organisationRole 
+# 7.2 organisationStartDate 
+# 7.3 organisationEndDate 
+# PART 1/2
+<https://ror.org/03qn8fb07>
+  a prov:Organization ;
+  a foaf:Organization ;
+  dcterms:identifier "ISNI:0000000121732719" ;
+  dcterms:identifier "https://crossref_funder_id/501100000943"^^xsd:anyURI ;
+  dcterms:identifier "https://grid/grid.1016.6"^^xsd:anyURI ;
+  dcterms:identifier "https://ror.org/03qn8fb07"^^xsd:anyURI ;
+  dcterms:title "Commonwealth Scientific and Industrial Research Organisation" ;
+  rdfs:comment "alternative places to store a name ... " ;
+  rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+  foaf:name "Commonwealth Scientific and Industrial Research Organisation" 
+.
+
+# GrantIdentifier; 8a grantIdentifierScheme; 8b grantIdentifierSchemeURI
+# 8.1 grantStart 
+# 8.2 grantEnd 
+# PART 2/2
+<http://pid/to/ARDCgrant123>
+  a proj:FundingAssociation ;
+  dcterms:identifier "ARC:BMF3859.01" ;
+  dcterms:identifier "https://www.moore.org/grants/list/GBMF3859.01"^^xsd:anyURI ;
+  dcterms:title "ARC GBMF3859.01" ;
+  prov:agent <https://arc.gov.au> ;
+  proj:fundsProvided [
+      a proj:SumOfMoney ;
+      proj:moneyAmount "50"^^xsd:decimal ;
+      proj:moneyCurrency <https://dbpedia.org/resource/Australian_dollar> ;
+    ] 
+.
+
+# 9 RelatedResource; 9a resourceIdentifierScheme; 9b resourceIdentifierSchemeURI
+# 9.1 relatedResourceType 
+# PART 1/1
+# RELATED INSTRUMENT
+<http://pid/to/instrument345>
+  a <http://todo/Instrument> ;
+  dcterms:identifier "SERIAL:ParticularInstrument345" ;
+  dcterms:identifier "http://doi/to/instrument345"^^xsd:anyURI ;
+  dcterms:identifier "http://pid/to/instrument345"^^xsd:anyURI ;
+  dcterms:title "Particular Instrument" 
+.
+# RELATED DATASET
+<http://pid/to/dataset987>
+  a dcat:Dataset ;
+  dcterms:identifier "OTHER_ID:ParticularDataset987" ;
+  dcterms:identifier "http://doi/to/dataset987"^^xsd:anyURI ;
+  dcterms:identifier "http://pid/to/dataset987"^^xsd:anyURI ;
+  dcterms:title "Particular Dataset" 
+.
+
+# 2 Title; 2a titleType; 2b titleStartDate; 2c titleEndDate 
+# PART 2/2 - Providing timerange for title - title requires IRI (does not have to resolve) for this
+<http://title_set_range/7346> 
+ a dcterms:title ;
+ rdf:value "RAID V0.1 XML Full Example.  Conforms with projectontology"^^xsd:string ;
+ dcterms:date "2012-03-01/2012-03-05"^^xsd:dateTime
+.

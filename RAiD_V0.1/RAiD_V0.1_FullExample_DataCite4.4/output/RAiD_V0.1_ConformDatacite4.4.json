@@ -1,0 +1,126 @@
+{
+  "resource": {
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xmlns": "http://datacite.org/schema/kernel-4",
+    "xsi:schemaLocation": "http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd",
+    "identifier": {
+      "identifierType": "RAID",
+      "#text": "https://raid.org/nn.nnnn/raid-example-full-conform-datacite4.4-3452634"
+    },
+    "titles": {
+      "title": [
+        {
+          "xml:lang": "en-US",
+          "#text": "RAID V0.1 XML Example"
+        },
+        {
+          "xml:lang": "en-US",
+          "titleType": "Subtitle",
+          "#text": "Conforms with DataCite Metadata 4.4"
+        }
+      ]
+    },
+    "descriptions": {
+      "description": {
+        "xml:lang": "en-US",
+        "descriptionType": "Abstract",
+        "#text": "RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.4.  All fields provided (at least in a comment if not accommodated by current schema)"
+      }
+    },
+    "creators": {
+      "creator": {"creatorName": "Project, Creator"}
+    },
+    "contributors": {
+      "contributor": [
+        {
+          "contributorType": "ContactPerson",
+          "contributorName": "Tree, Green",
+          "nameIdentifier": {
+            "schemeURI": "https://orcid.org/",
+            "nameIdentifierScheme": "ORCID",
+            "#text": "0000-0002-7184-017X"
+          }
+        },
+        {
+          "contributorType": "ProjectManager",
+          "contributorName": "CSIRO",
+          "nameIdentifier": {
+            "schemeURI": "https://ror.org/",
+            "nameIdentifierScheme": "ROR",
+            "#text": "https://ror.org/03qn8fb07"
+          }
+        }
+      ]
+    },
+    "fundingReferences": {
+      "fundingReference": {
+        "funderName": "Australian Research Council",
+        "awardNumber": {
+          "awardURI": "https://www.moore.org/grants/list/GBMF3859.01",
+          "#text": "GBMF3859.01"
+        }
+      }
+    },
+    "relatedItems": {
+      "relatedItem": {
+        "relationType": "IsCitedBy",
+        "relatedItemType": "Dataset",
+        "relatedItemIdentifier": {
+          "relatedItemIdentifierType": "DOI",
+          "#text": "10.21384/ExampleDataset"
+        }
+      }
+    },
+    "publisher": {
+      "xml:lang": "en",
+      "#text": "RAiD"
+    },
+    "subjects": {
+      "subject": {
+        "xml:lang": "en-US",
+        "schemeURI": "https://linked.data.gov.au/def/anzsrc-for/2020/41",
+        "subjectScheme": "ANZSRC-FOR",
+        "classificationCode": 41,
+        "#text": "ENVIRONMENTAL SCIENCES"
+      }
+    },
+    "rightsList": {
+      "rights": [
+        {
+          "xml:lang": "en",
+          "schemeURI": "https://spdx.org/licenses/",
+          "rightsIdentifierScheme": "SPDX",
+          "rightsIdentifier": "CC-BY-4.0",
+          "rightsURI": "https://creativecommons.org/licenses/by/4.0/",
+          "#text": "Creative Commons Attribution 4.0 International"
+        },
+        "Big long rights statement",
+        "Access Statement and embargo possibly too"
+      ]
+    },
+    "geoLocations": {
+      "geoLocation": {"geoLocationPlace": "Southern Ocean"}
+    },
+    "alternateIdentifiers": {
+      "alternateIdentifier": {
+        "alternateIdentifierType": "URL",
+        "#text": "https://cris.university.this/234876"
+      }
+    },
+    "language": "en-US",
+    "resourceType": {
+      "resourceTypeGeneral": "Event",
+      "#text": "Project"
+    },
+    "relatedIdentifiers": {
+      "relatedIdentifier": {
+        "relatedIdentifierType": "URL",
+        "relationType": "HasPart",
+        "relatedMetadataScheme": "raid+json",
+        "schemeURI": "https://raid.org/0/schema-xml",
+        "#text": "https://raid.org/nn.nnnn/raid-example-full/subpart"
+      }
+    },
+    "publicationYear": 2022
+  }
+}

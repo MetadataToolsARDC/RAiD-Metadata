@@ -1,0 +1,358 @@
+[
+  {
+    "@id": "file:~/git/projects/RAiD/RAID_V1_FullExample_ProjectOntology.ttl",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "https://linked.data.gov.au/def/project"
+      }
+    ]
+  },
+  {
+    "@id": "https://raid.org/nn.nnnn/raid-example-full-conform-schema.org-3452634.ttl",
+    "@type": [
+      "https://linked.data.gov.au/def/project#Project"
+    ],
+    "http://purl.org/dc/terms/accessRights": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Access Statement and embargo possibly too"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "RAID V1 XML Full Example.  Conforms with DataCite Metadata 4.5.  All fields provided (at least in a comment if not accommodated by schema.org)"
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://RAiD.org/oy54398ryf"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://cris.university.this/234876"
+      }
+    ],
+    "http://purl.org/dc/terms/licence": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#uri",
+        "@value": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/location": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Australia"
+      }
+    ],
+    "http://purl.org/dc/terms/relation": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://raid.org/nn.nnnn/raid-example-full/subpart"
+      }
+    ],
+    "http://purl.org/dc/terms/rightsHolder": [
+      {
+        "@id": "https://ror.org/03qn8fb07"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#uri",
+        "@value": "https://linked.data.gov.au/def/anzsrc-for/2020/41"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://title_set_range/7346"
+      }
+    ],
+    "https://linked.data.gov.au/def/project#wasFundedThrough": [
+      {
+        "@id": "https://www.moore.org/grants/list/GBMF3859.01"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "1991-10-17T17:00:00.0+01:00"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generated": [
+      {
+        "@id": "http://pid/to/dataset987"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedAssociation": [
+      {
+        "@type": [
+          "http://www.w3.org/ns/prov#Activity",
+          "http://www.w3.org/ns/prov#Association"
+        ],
+        "http://www.w3.org/ns/prov#agent": [
+          {
+            "@id": "http://orcid.org/0000-0002-7184-017X"
+          }
+        ],
+        "http://www.w3.org/ns/prov#endedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2002-10-17T17:00:00.0+01:00"
+          }
+        ],
+        "http://www.w3.org/ns/prov#hadRole": [
+          {
+            "@id": "http://vivoweb.org/ontology/core#PrincipalInvestigatorRole"
+          }
+        ],
+        "http://www.w3.org/ns/prov#startedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2002-10-13T09:00:00.0+01:00"
+          }
+        ]
+      },
+      {
+        "@type": [
+          "http://www.w3.org/ns/prov#Activity",
+          "http://www.w3.org/ns/prov#Association"
+        ],
+        "http://www.w3.org/ns/prov#agent": [
+          {
+            "@id": "https://ror.org/03qn8fb07"
+          }
+        ],
+        "http://www.w3.org/ns/prov#endedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2021-03-31T17:00:00.00Z"
+          }
+        ],
+        "http://www.w3.org/ns/prov#hadRole": [
+          {
+            "@id": "http://vivoweb.org/ontology/core#LeaderRole"
+          }
+        ],
+        "http://www.w3.org/ns/prov#startedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "2002-10-13T09:00:00.0+01:00"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedUsage": [
+      {
+        "@type": [
+          "http://www.w3.org/ns/prov#Activity",
+          "http://www.w3.org/ns/prov#Usage"
+        ],
+        "http://www.w3.org/ns/prov#endedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "1991-10-17T17:00:00.0+01:00"
+          }
+        ],
+        "http://www.w3.org/ns/prov#entity": [
+          {
+            "@id": "http://pid/to/instrument345"
+          }
+        ],
+        "http://www.w3.org/ns/prov#startedAtTime": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@value": "1980-10-13T09:00:00.0+01:00"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+          {
+            "@value": "optional time-limited usage if needed"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "Use of machine 345"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "1980-10-13T09:00:00.0+01:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://orcid.org/0000-0002-7184-017X",
+    "@type": [
+      "http://www.w3.org/ns/prov#Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://orcid.org/0000-0002-7184-017X"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/firstname": [
+      {
+        "@value": "Green"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/surname": [
+      {
+        "@value": "Tree"
+      }
+    ]
+  },
+  {
+    "@id": "https://ror.org/03qn8fb07",
+    "@type": [
+      "http://www.w3.org/ns/prov#Organization",
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "ISNI:0000000121732719"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://crossref_funder_id/501100000943"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://grid/grid.1016.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://ror.org/03qn8fb07"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Commonwealth Scientific and Industrial Research Organisation"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Commonwealth Scientific and Industrial Research Organisation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "alternative places to store a name ... "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Commonwealth Scientific and Industrial Research Organisation"
+      }
+    ]
+  },
+  {
+    "@id": "http://pid/to/ARDCgrant123",
+    "@type": [
+      "https://linked.data.gov.au/def/project#FundingAssociation"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "ARC:BMF3859.01"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://www.moore.org/grants/list/GBMF3859.01"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "ARC GBMF3859.01"
+      }
+    ],
+    "https://linked.data.gov.au/def/project#fundsProvided": [
+      {
+        "@type": [
+          "https://linked.data.gov.au/def/project#SumOfMoney"
+        ],
+        "https://linked.data.gov.au/def/project#moneyAmount": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+            "@value": "50"
+          }
+        ],
+        "https://linked.data.gov.au/def/project#moneyCurrency": [
+          {
+            "@id": "https://dbpedia.org/resource/Australian_dollar"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "https://arc.gov.au"
+      }
+    ]
+  },
+  {
+    "@id": "http://pid/to/instrument345",
+    "@type": [
+      "http://todo/Instrument"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "SERIAL:ParticularInstrument345"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://doi/to/instrument345"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://pid/to/instrument345"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Particular Instrument"
+      }
+    ]
+  },
+  {
+    "@id": "http://pid/to/dataset987",
+    "@type": [
+      "http://www.w3.org/ns/dcat#Dataset"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "OTHER_ID:ParticularDataset987"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://doi/to/dataset987"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://pid/to/dataset987"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Particular Dataset"
+      }
+    ]
+  },
+  {
+    "@id": "http://title_set_range/7346",
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2012-03-01/2012-03-05"
+      }
+    ]
+  }
+]
